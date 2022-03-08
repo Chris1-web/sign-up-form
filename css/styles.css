@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-shade: #008000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.sign-up-form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2.5rem;
+}
+
+legend {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+}
+
+.last-child {
+  margin-bottom: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-instruction h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.form-instruction p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input {
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0;
+  border: 0.1rem solid grey;
+  /* box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.06); */
+  border-radius: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid var(--primary-color-shade);
+  box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.06);
+}
+
+input[type="password"]:invalid {
+  border: 0.195rem solid red;
+}
+
+input[type="password"]:focus {
+  border: 2px solid var(--primary-color-shade);
+  box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.06);
+}
+
+button {
+  padding: 1rem 5rem;
+  width: 100%;
+  background-color: var(--primary-color-shade);
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.log-in-link p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.img-slide {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(120, 50%, 40%, 0.233),
+      hsla(120, 75%, 50%, 0.212)
+    ),
+    url("../img/boy-sitting-on-books-and-reading.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photo-create {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 1.3rem;
+  color: #091625;
+}
+
+.photo-create > a {
+  color: #091625;
+}
+
+.odin-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 100%;
+  color: #ffffff;
+}
+
+.odin-logo img {
+  width: 7rem;
+  height: auto;
+}
+
+#odin-logo-text {
+  font-family: "Syne Mono", monospace;
+  font-size: 8rem;
+}
